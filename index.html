@@ -1,0 +1,130 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta
+name="viewport"content="width=device-width, initial-scale=1.0"> <title>Career
+Pathways: An Interactive Guide</title> <scriptsrc="https://
+cdn.tailwindcss.com"></script> <script src="https://cdn.jsdelivr.net/npm/
+chart.js"></script> <linkrel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com"crossorigin> <link
+href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@400;600;700&display=swap"rel="stylesheet"> <style>
+body { font-family: 'Poppins', sans-serif; } .chart-container { position: relative;
+width: 100%;max-width: 500px; margin-left: auto; margin-right: auto; height:
+300px; max-height: 350px; } @media (min-width: 768px) { .chart-container
+{ height: 350px; max-height: 400px; } } .flowchart-step { position: relative; display:
+flex; align-items: center; justify-content: center; text-align: center; } .flowchartstep:not(:last-child)::after { content: '➔'; font-size: 2rem; color: #FFD166; position:
+absolute; right: -30px; top: 50%; transform: translateY(-50%); } @media (maxwidth: 767px) { .flowchart-step:not(:last-child)::after { content: '
+'; right: 50%;
+top: 100%; transform: translateX(50%); } }</style> </head> <body class="bggray-100" style="background-color: #073B4C;"> <div class="container mx-auto
+p-4 md:p-8"> <header class="text-center mb-12"> <h1 class="text-4xl
+md:text-6xl font-bold text-white mb-4">Your Future, Your Path</h1> <p
+class="text-lg md:text-xl text-gray-300">An interactive guide to discovering the
+perfect career for you.</p> </header> <main class="space-y-12"> <section
+id="know-yourself" class="bg-white rounded-xl shadow-2xl p-6 md:p-8"> <div
+class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"> <div class="textcenter md:text-left"> <h2class="text-3xl font-bold text-[#073B4C] mb-3">Step 1:
+Know Yourself</h2> <p class="text-gray-600 mb-4">The first step on any journey
+is knowing your starting point. A self-assessment helps you understand your own
+unique mix of interests, skills, and values. This isn't a test; it's a discovery process
+to find out what makes you, you!</p> <div class="bg-[#FF6B6B] text-white p-6
+rounded-lg text-center shadow-lg"> <div class="text-5xl font-bold">85%</div>
+<pclass="font-semibold">of job success is attributed to well-developed soft skills
+like communication and teamwork, which you discover during self-assessment.</
+p> </div> </div> <div> <div class="chart-container">
+<canvasid="selfAssessmentChart"></canvas> </div> <p class="text-center textsm text-gray-500 mt-2">A great career is a balance of what you love, what you're
+good at, and what you value.</p> </div> </div> </section> <section
+id="explore"class="bg-white rounded-xl shadow-2xl p-6 md:p-8"> <h2
+class="text-3xl font-bold text-[#073B4C] mb-4 text-center">Steps 2 & 3: Explore
+& Research</h2> <p class="text-gray-600 mb-8 text-center max-w-3xl mxauto">The world of work is huge! Now it's time to be a detective. Explore different
+industries and careers to see what's out there. You might be surprised by what
+you find.</p> <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div><div class="chart-container"> <canvas id="growingIndustriesChart"></
+canvas> </div> <p class="text-center text-sm text-gray-500 mt-2">Focusing on
+growing fields can open up more opportunities in the future.</p> </div>
+<divclass="text-center md:text-left"> <h3 class="text-2xl font-semibold text-
+[#118AB2] mb-3">How to Explore:</h3> <ulclass="space-y-3"> <li class="bggray-100 p-4 rounded-lg flex items-center shadow"><span class="text-2xl
+mr-4">
+</span> Do online research on sites like the Bureau of Labor
+Statistics.</li> <li class="bg-gray-100 p-4 rounded-lg flex items-center
+shadow"><span class="text-2xl mr-4">
+</span> Conduct informational
+interviews with people in jobs that seem cool.</li> <li class="bg-gray-100 p-4
+rounded-lg flex items-center shadow"><span class="text-2xl mr-4">
+</span>
+Ask to "job shadow" someone for a day to see what their work is really like.</li> </
+ul> </div> </div> </section><section id="plan" class="bg-white rounded-xl
+shadow-2xl p-6 md:p-8"> <h2 class="text-3xl font-bold text-[#073B4C] mb-4
+text-center">Steps 4 & 5: Set Goals & Gain Skills</h2> <p class="text-gray-600
+mb-8 text-center max-w-3xl mx-auto">A dream without a plan is just a wish.
+Setting goals and learning new skills turns your career ideas into reality. This is
+how you build your path to success, one step at a time.</p> <div class="grid gridcols-1 md:grid-cols-4 gap-8 md:gap-4 mb-10"> <div class="flowchart-step bg-
+[#06D6A0] text-white p-4 rounded-lg shadow-md h-24">Set a Clear Goal</
+div><div class="flowchart-step bg-[#06D6A0] text-white p-4 rounded-lg
+shadow-md h-24">Get Education & Training</div><div class="flowchart-step bg-
+[#06D6A0] text-white p-4 rounded-lg shadow-md h-24">Gain Experience</div>
+<divclass="flowchart-step bg-[#06D6A0] text-white p-4 rounded-lg shadow-md
+h-24">Achieve Success!</div> </div> <divclass="grid grid-cols-1 sm:grid-cols-3
+gap-6 text-center"> <div class="bg-gray-100 p-6 rounded-lg shadow">
+<divclass="text-5xl mb-2">
+</div><h3 class="text-xl font-bold text-
+[#118AB2]">University</h3><p class="text-sm text-gray-600">For careers
+requiring a Bachelor's degree or higher.</p> </div> <div class="bg-gray-100 p-6
+rounded-lg shadow"> <div class="text-5xl mb-2">
+</div><h3 class="text-xl
+font-bold text-[#118AB2]">Vocational School</h3><p class="text-sm textgray-600">For hands-on skills in trades like culinary arts or auto tech.</p> </div>
+<div class="bg-gray-100 p-6 rounded-lg shadow"> <div class="text-5xl mb-2">
+</div><h3 class="text-xl font-bold text-[#118AB2]">Internships</h3><p
+class="text-sm text-gray-600">Gain real-world experience while you're still in
+school.</p> </div> </div> </section> <section id="grow" class="bg-white
+rounded-xl shadow-2xl p-6 md:p-8"> <divclass="grid grid-cols-1 md:grid-cols-2
+gap-8 items-center"> <div class="text-center md:text-left"> <h2 class="text-3xl
+font-bold text-[#073B4C] mb-3">Step 6 & 7: Network & Adapt</h2> <p
+class="text-gray-600 mb-4">Your career journey is lifelong! Building a network
+means connecting with people who can help you, and being adaptable means
+you're ready for any exciting new opportunities that come your way. The skills you
+build today are your superpowers for tomorrow.</p> <div class="bg-[#FFD166]
+text-[#073B4C] p-6 rounded-lg text-center shadow-lg"> <p class="font-semibold
+text-lg">Your career path isn't a straight line—it's an adventure full of learning and
+growth!</p> </div> </div><div> <div class="chart-container"> <canvas
+id="powerSkillsChart"></canvas> </div> <p class="text-center text-sm textgray-500 mt-2">These skills are valuable in almost any career you can imagine.</
+p> </div> </div> </section></main> <footer class="text-center mt-12"> <p
+class="text-gray-400">Your journey starts now. Be curious, be brave, and have
+fun exploring!</p> </footer> </div> <script> const energeticPalette = { red:
+'#FF6B6B', yellow: '#FFD166', green: '#06D6A0', blue: '#118AB2', darkBlue:
+'#073B4C' }; const defaultChartOptions = { responsive: true,maintainAspectRatio:
+false, plugins: { legend: { labels: { color: energeticPalette.darkBlue, font: { size: 14,
+family: 'Poppins' } } }, tooltip: { callbacks: { title: function(tooltipItems) { const item
+= tooltipItems[0]; let label = item.chart.data.labels[item.dataIndex]; if
+(Array.isArray(label)) { return label.join(' '); } else { return label; } } } } } };function
+wrapLabel(str, maxWidth) { if (str.length <= maxWidth) { return str; } let wrapped =
+[]; let words = str.split(' ');let currentLine = ''; words.forEach(word => { if
+((currentLine + ' ' + word).trim().length > maxWidth) { wrapped.push(currentLine);
+currentLine = word; } else { currentLine = (currentLine + ' ' + word).trim(); } });
+wrapped.push(currentLine); return wrapped; } new
+Chart(document.getElementById('selfAssessmentChart'), { type: 'doughnut', data:
+{ labels: ['Your Interests', 'Your Skills', 'Your Values', 'Your Personality'], datasets:
+[{ label: 'Components of Self-Assessment', data: [25, 25, 25, 25],
+backgroundColor: [ energeticPalette.red, energeticPalette.yellow,
+energeticPalette.green, energeticPalette.blue ], borderColor: '#fff', borderWidth:
+4, hoverOffset: 8 }] }, options: { ...defaultChartOptions } }); const industryLabels =
+['Healthcare & Social Assistance', 'Technology & Information', 'Renewable Energy
+(Green Jobs)', 'Creative Arts & Entertainment', 'Skilled Trades (Construction,
+etc)'].map(label =>wrapLabel(label, 16)); new
+Chart(document.getElementById('growingIndustriesChart'), { type: 'bar', data:
+{ labels: industryLabels, datasets: [{ label: 'Projected Job Growth (Next 10 Years)',
+data: [18, 15, 22, 10, 12], backgroundColor: energeticPalette.green, borderColor:
+energeticPalette.darkBlue, borderWidth: 2, borderRadius: 5 }] }, options:
+{ ...defaultChartOptions, scales: { y: { beginAtZero: true, ticks: { color:
+energeticPalette.darkBlue, font: { family: 'Poppins'} }, title: { display: true, text:
+'Growth (%)', color: energeticPalette.darkBlue } }, x: { ticks: { color:
+energeticPalette.darkBlue, font: { family: 'Poppins' } } } }, plugins:
+{ ...defaultChartOptions.plugins, legend: { display: false } } } }); new
+Chart(document.getElementById('powerSkillsChart'), { type: 'radar', data: { labels:
+['Communication', 'Teamwork', 'Problem-Solving', 'Creativity', 'Adaptability',
+'Leadership'], datasets: [{ label: 'Your Future Power Skills',data: [85, 90, 75, 80,
+95, 70], fill: true, backgroundColor: 'rgba(255, 107, 107, 0.4)', borderColor:
+energeticPalette.red,pointBackgroundColor: energeticPalette.red,
+pointBorderColor: '#fff', pointHoverBackgroundColor:
+'#fff',pointHoverBorderColor: energeticPalette.red }] }, options:
+{ ...defaultChartOptions, scales: { r: { angleLines: { color: 'rgba(7, 59, 76, 0.2)' },
+grid: { color: 'rgba(7, 59, 76, 0.2)' }, pointLabels: { font: { size: 13, family:
+'Poppins' }, color: energeticPalette.darkBlue }, ticks: { color:
+energeticPalette.darkBlue, backdropColor: 'rgba(255, 255, 255, 0.75)' } } } } }); </
+script> </body> </html>
